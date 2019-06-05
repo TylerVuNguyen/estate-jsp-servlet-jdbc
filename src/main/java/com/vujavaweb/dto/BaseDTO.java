@@ -9,7 +9,9 @@ public class BaseDTO {
 	private String modifiedby;
 	private Timestamp createddate;
 	private Timestamp modifieddate;
-
+	private int maxPageItem = 2;
+	private int page = 1;
+	
 	public Long getId() {
 		return id;
 	}
@@ -48,6 +50,22 @@ public class BaseDTO {
 
 	public void setModifieddate(Timestamp modifieddate) {
 		this.modifieddate = modifieddate;
+	}
+
+	public int getMaxPageItem() {
+		return maxPageItem;
+	}
+
+	public void setMaxPageItem(int maxPageItem) {
+		this.maxPageItem = maxPageItem;
+	}
+
+	public int getPage() {
+		return page;
+	}
+
+	public void setPage(int page) {
+		this.page = page;
 	}
 
 }
